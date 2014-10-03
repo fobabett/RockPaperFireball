@@ -1,6 +1,8 @@
 var userChoice = prompt("rock, paper, or fireball?")
 
 var computerChoice = Math.random();
+var userScore = 0;
+var computerScore = 0;
 console.log(computerChoice);
 
 if (computerChoice <=0.33){
@@ -33,11 +35,13 @@ function compare(userChoice, computerChoice){
 
   else if (userChoice === "rock"){
     if(computerChoice === "fireball"){
+      var userScore = 1;
       return "rock blocks fireball";
     }
 
 
   else{
+    var computerScore = 1;
     return "paper covers rock";
   }
 }
@@ -45,9 +49,11 @@ function compare(userChoice, computerChoice){
 
   else if (userChoice === "paper"){
     if(computerChoice === "rock"){
+      var userScore = 1;
       return "paper covers rock";
     } 
   else {
+    var computerScore = 1;
     return "fireball engulfs paper";
   }
 }
@@ -56,11 +62,13 @@ function compare(userChoice, computerChoice){
 
   else if (userChoice === "fireball"){
     if(computerChoice === "paper") {
+      var userScore = 1;
     return "fireball engulfs paper";
     }
 
 
   else {
+    var computerScore = 1;
     return "rock blocks fireball";
   }
 
