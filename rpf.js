@@ -1,4 +1,5 @@
-var userChoice = prompt("Do you choose rock, paper, fireball?");
+var userChoice = prompt("rock, paper, or fireball?")
+
 var computerChoice = Math.random();
 console.log(computerChoice);
 if (computerChoice <=0.33) {computerChoice = ("rock");}
@@ -46,11 +47,9 @@ else {return "rock blocks fireball";}
 
 
 }
-
-
-
-
 }
+
+
 
 
 
