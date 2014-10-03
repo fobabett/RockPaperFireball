@@ -8,10 +8,12 @@ else if (computerChoice > 0.34 && computerChoice < 0.67)
 
 else {computerChoice = ("fireball");}
 
-document.getElementById("results").innerHTML = "Computer chose " + computerChoice;
+document.getElementById("userChoice").innerHTML = "You chose " + userChoice;
+document.getElementById("computerChoice").innerHTML = "Computer chose " + computerChoice;
 
 var result = compare(userChoice,computerChoice);
-console.log(result);
+document.getElementById("results").innerHTML = result;
+
 //Rock blocks fireball.
 //Fireball engulfs paper.
 //Paper covers rock.
