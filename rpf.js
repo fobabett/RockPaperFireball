@@ -1,6 +1,6 @@
-var userChoice = prompt("Do you choose rock, paper, fireball?")
-var computerChoice = Math.random()
-console.log(computerChoice)
+var userChoice = prompt("Do you choose rock, paper, fireball?");
+var computerChoice = Math.random();
+console.log(computerChoice);
 if (computerChoice <=0.33) {computerChoice = ("rock");}
 
 else if (computerChoice > 0.34 && computerChoice < 0.67)
@@ -8,15 +8,16 @@ else if (computerChoice > 0.34 && computerChoice < 0.67)
 
 else {computerChoice = ("fireball");}
 
-console.log("Computer: " + computerChoice);
+document.getElementById("results").innerHTML = "Computer chose " + computerChoice;
 
-
+var result = compare(userChoice,computerChoice);
+console.log(result);
 //Rock blocks fireball.
 //Fireball engulfs paper.
 //Paper covers rock.
 
 
-var compare = function(choice1, choice2){if(choice1 === choice2) {return "The result is a tie!";}
+function compare(choice1, choice2){if(choice1 === choice2) {return "The result is a tie!";}
 
 else if (choice1 === "rock") 
 
