@@ -26,13 +26,13 @@ document.getElementById("results").innerHTML = result;
 //Paper covers rock.
 
 
-function compare(choice1, choice2){
-  if(choice1 === choice2){
+function compare(userChoice, computerChoice){
+  if(userChoice === computerChoice){
     return "The result is a tie!";
   }
 
-  else if (choice1 === "rock"){
-    if(choice2 === "fireball"){
+  else if (userChoice === "rock"){
+    if(computerChoice === "fireball"){
       return "rock blocks fireball";
     }
 
@@ -43,8 +43,8 @@ function compare(choice1, choice2){
 }
 
 
-  else if (choice1 === "paper"){
-    if(choice2 === "rock"){
+  else if (userChoice === "paper"){
+    if(computerChoice === "rock"){
       return "paper covers rock";
     } 
   else {
@@ -54,8 +54,8 @@ function compare(choice1, choice2){
 
 
 
-  else if (choice1 === "fireball"){
-    if(choice2 === "paper") {
+  else if (userChoice === "fireball"){
+    if(computerChoice === "paper") {
     return "fireball engulfs paper";
     }
 
