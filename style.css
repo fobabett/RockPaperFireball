@@ -1,0 +1,29 @@
+body{
+  background: #00FF99;
+}
+
+h1{
+  text-align: center;
+  color: #0066FF;
+}
+
+#userChoice{
+  color: #0066FF;
+  text-align: center;
+}
+
+#computerChoice{
+  color: #0066FF;
+  text-align: center;
+}
+
+#results{
+  color: #0066FF;
+  text-align: center;
+}
+
+#scoreBoard{
+  border: 1px solid #0066FF;
+  text-align: center;
+}
+
