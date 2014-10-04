@@ -22,7 +22,7 @@ document.getElementById("computerChoice").innerHTML = "Computer chose " + comput
 
 var result = compare(userChoice,computerChoice);
 document.getElementById("results").innerHTML = result;
-document.getElementById("scoreBoard").innerHTML = ("Your Score: " + userScore + " Computer Score: " + computerScore);
+//document.getElementById("scoreBoard").innerHTML = ("Your Score: " + userScore + " Computer Score: " + computerScore);
 
 
 //Rock blocks fireball.
@@ -38,13 +38,17 @@ function compare(userChoice, computerChoice){
   else if (userChoice === "rock"){
     if(computerChoice === "fireball"){
       var userScore = 1;
-      return "rock blocks fireball";
+      var computerScore = 0;
+      document.getElementById("scoreBoard").innerHTML = ("Your Score: " + userScore + " Computer Score: " + computerScore);
+      return "rock blocks fireball. You win!";
     }
 
 
   else{
     var computerScore = 1;
-    return "paper covers rock";
+    var userScore = 0;
+    document.getElementById("scoreBoard").innerHTML = ("Your Score: " + userScore + " Computer Score: " + computerScore);
+    return "paper covers rock. You lose!";
   }
 }
 
@@ -52,11 +56,15 @@ function compare(userChoice, computerChoice){
   else if (userChoice === "paper"){
     if(computerChoice === "rock"){
       var userScore = 1;
-      return "paper covers rock";
+      var computerScore = 0;
+      document.getElementById("scoreBoard").innerHTML = ("Your Score: " + userScore + " Computer Score: " + computerScore);
+      return "paper covers rock. You win!";
     } 
   else {
     var computerScore = 1;
-    return "fireball engulfs paper";
+    var userScore = 0;
+    document.getElementById("scoreBoard").innerHTML = ("Your Score: " + userScore + " Computer Score: " + computerScore);
+    return "fireball engulfs paper. You lose!";
   }
 }
 
@@ -65,13 +73,17 @@ function compare(userChoice, computerChoice){
   else if (userChoice === "fireball"){
     if(computerChoice === "paper") {
       var userScore = 1;
-    return "fireball engulfs paper";
+      var computerScore = 0;
+      document.getElementById("scoreBoard").innerHTML = ("Your Score: " + userScore + " Computer Score: " + computerScore);
+    return "fireball engulfs paper. You win!";
     }
 
 
   else {
     var computerScore = 1;
-    return "rock blocks fireball";
+    var userScore = 0;
+    document.getElementById("scoreBoard").innerHTML = ("Your Score: " + userScore + " Computer Score: " + computerScore);
+    return "rock blocks fireball. You lose!";
   }
 
 
