@@ -1,15 +1,15 @@
 var userChoice = prompt("rock, paper, or fireball?")
 
-var computerChoice = Math.random();
+var computerChoice = Math.floor(Math.random()*3);
 var userScore = 0;
 var computerScore = 0;
 console.log(computerChoice);
 
-if (computerChoice <=0.33){
+if (computerChoice = 0){
   computerChoice = ("rock");
 }
 
-else if (computerChoice > 0.34 && computerChoice < 0.67){
+else if (computerChoice = 1){
   computerChoice= ("paper");
 }
 
@@ -22,7 +22,7 @@ document.getElementById("computerChoice").innerHTML = "Computer chose " + comput
 
 var result = compare(userChoice,computerChoice);
 document.getElementById("results").innerHTML = result;
-//document.getElementById("scoreBoard").innerHTML = ("Your Score: " + userScore + " Computer Score: " + computerScore);
+
 
 
 //Rock blocks fireball.
