@@ -22,6 +22,8 @@ document.getElementById("computerChoice").innerHTML = "Computer chose " + comput
 
 var result = compare(userChoice,computerChoice);
 document.getElementById("results").innerHTML = result;
+document.getElementById("scoreBoard").innerHTML = ("Your Score: " + userScore + " Computer Score: " + computerScore);
+
 
 //Rock blocks fireball.
 //Fireball engulfs paper.
