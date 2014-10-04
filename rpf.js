@@ -1,4 +1,4 @@
-var userChoice = prompt("rock, paper, or fireball?")
+var userChoice = prompt("rock, paper, or fireball?");
 
 var computerChoice = Math.floor(Math.random()*3);
 var userScore = 0;
@@ -89,3 +89,4 @@ function compare(userChoice, computerChoice){
 
 }
 }
+
