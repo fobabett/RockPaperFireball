@@ -89,4 +89,3 @@ function compare(userChoice, computerChoice){
 
 }
 }
-
